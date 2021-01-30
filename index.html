@@ -18,18 +18,16 @@ function preloadScripts(lst){
 }
 function done(){if(main_ret == 0 || main_ret == 179){read_ptr_at(0);}}
 window.midExploit = function(){
-	if(document.location.hash){
-		preloadScripts(['kex.js', 'cache.js', 'c-code.js'], go);
-	}else{
-		preloadScripts(['kex.js', 'c-code.js'], go);
-	}
+	preloadScripts(['702.js', 'jb_c-code.js', 'mira.js', 'cache.js', 'mira_c-code.js'], go);
 }
 window.postExploit = function(){
 	document.cookie='kex=0';
 	setTimeout(function(){eval.call(window, scriptCode); done();},100);
 }
 </script>
-<script src="webkit.js"></script>
+<script src="utils.js"></script>
+<script src="int64.js"></script>
+<script src="ps4.js"></script>
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
 <button id="input3" onfocus="handle2()"></button>
