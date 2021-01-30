@@ -392,10 +392,6 @@ function prepareUAF() {
 function sprayHTMLTextArea() {
 	debug_log("");
 	debug_log("");
-	debug_log("");
-	debug_log("");
-	debug_log("");
-	debug_log("");
 	debug_log("I n i c i a n d o ...");
 
 	let textarea_div_elem = document.createElement("div");
